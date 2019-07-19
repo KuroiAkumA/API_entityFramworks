@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_ViviLovelyNailsModelStoreContainer" CdmEntityContainer="DB_ViviLovelyNailsEntities">
+    <EntitySetMapping Name="Cita">
+      <EntityTypeMapping TypeName="DB_ViviLovelyNailsModel.Cita">
+        <MappingFragment StoreEntitySet="Cita">
+          <ScalarProperty Name="idCita" ColumnName="idCita" />
+          <ScalarProperty Name="idClienta" ColumnName="idClienta" />
+          <ScalarProperty Name="idTrabajadora" ColumnName="idTrabajadora" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clienta">
+      <EntityTypeMapping TypeName="DB_ViviLovelyNailsModel.Clienta">
+        <MappingFragment StoreEntitySet="Clienta">
+          <ScalarProperty Name="idClienta" ColumnName="idClienta" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="contacto" ColumnName="contacto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trabajadora">
+      <EntityTypeMapping TypeName="DB_ViviLovelyNailsModel.Trabajadora">
+        <MappingFragment StoreEntitySet="Trabajadora">
+          <ScalarProperty Name="idTrabajadora" ColumnName="idTrabajadora" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="DB_ViviLovelyNailsModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="idEstatus" ColumnName="idEstatus" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
